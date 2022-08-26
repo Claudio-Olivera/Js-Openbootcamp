@@ -1,0 +1,16 @@
+{
+  "name": "hola-mundo",
+  "version": "1.0.0",
+  "description": "proyecto de javascript con node -OpenBootcamp",
+  "main": "index.js",
+  "scripts": {
+    "start":"node hola_mundo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "project"
+  ],
+  "author": "Claudio Olivera",
+  "license": "ISC"
+}
