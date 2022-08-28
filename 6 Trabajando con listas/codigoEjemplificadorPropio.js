@@ -21,20 +21,16 @@ const personas = [
     },
 ]
 
-
-
-
+/*de esta forma filtro por condicion y despues mapeo aprovechando desestructuracion*/ 
 let nombre = personas.filter (persona => persona.edad >= 20).map(({nombre})=>nombre);
 console.log(nombre)
-/*de esta forma solo uno*/ 
+
 
 personas.forEach(persona=> {
     if(persona.edad>=20){
     console.log(persona.nombre)}
 });
 /*de esta forma todos con for each */
-
-
 
 const personitas = [
     {
