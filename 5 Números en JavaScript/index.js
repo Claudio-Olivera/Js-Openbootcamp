@@ -7,6 +7,11 @@ let alturaMetrosRedondeada = Math.ceil(alturaFlotante)
 */
 let alturaMetrosRedondeadaAbajo = Math.floor(alturaFlotante)
 
+
+const igualdadNumerosMaximos = Number.MAX_VALUE + 1 === Number.MAX_VALUE 
+console.log(igualdadNumerosMaximos)
+
+
 /*Funcion para saber si el numero maximo obtenible en javascript (mas +1) , 
 es igual al numero maximo obtenible*/ 
 function comparacionNumeroMaximo() {
