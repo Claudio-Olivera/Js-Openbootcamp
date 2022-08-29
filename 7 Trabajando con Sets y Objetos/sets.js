@@ -42,4 +42,4 @@ console.log(it_miSet)
 
 /*Asi los vuelvo a convertir en array con valores unicos*/
 const ar_miSet = [ ...miSet ]
-console.log(ar_miSet)
+console.log(ar_miSet) 
