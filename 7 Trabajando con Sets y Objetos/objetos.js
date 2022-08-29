@@ -1,59 +1,36 @@
-// Trabajando con Objetos
-const obj = {
-    id: 4,
-    nombre: "Juan",
-    apellido: "González",
-    isDeveloper: false,
-    libros_favoritos: ["El método", "El código de la manifestación"],
-    "4-juegos": [1, 2, 3, 4]
+let datosPersonales = {
+    nombre:"Claudio Miguel",
+    apellido:"Olivera González",
+    edad:33, 
+    altura:1.85,
+    eresDesarrollador:true
 }
 
-console.log(obj.id)
-console.log(obj["4-juegos"])
-
-const prop = "isDeveloper"
-console.log(obj[prop])
-
-const obj2 = obj;
-console.log(obj2);
-
-obj2.nombre = "Iñigo"
-console.log(obj2.nombre)
-console.log(obj.nombre)
-
-let val1 = 4
-let val2 = val1
-
-val2 = 6
-console.log(val1)
-console.log(val2)
-
-//////////////
-
-const obj3 = { ...obj }
-
-console.log(obj.nombre)
-console.log(obj3.nombre)
-
-obj3.nombre = "Gorka"
-
-console.log(obj.nombre)
-console.log(obj3.nombre)
-
-/////////////
-// Cómo ordenar listas de objetos en función de una propiedad
-
-const listaPeliculas = [
-    { titulo: "Lo que el viento se llevó", anyo: 1939 },
-    { titulo: "Titanic", anyo: 1997 },
-    { titulo: "Moana", anyo: 2016 },
-    { titulo: "El efecto mariposa", anyo: 2004 },
-    { titulo: "TED", anyo: 2012 }
+let datosAmigos = [
+{
+    nombre:"Filomena",
+    apellido:"Garcia",
+    edad:34, 
+    altura:1.80,
+    eresDesarrollador:false
+},
+{
+    nombre:"Marcos",
+    apellido:"Garcia",
+    edad:35, 
+    altura:1.70,
+    eresDesarrollador:true
+}
 ]
 
-console.log(listaPeliculas)
-// .sort() -> MUTA EL VALOR DE LA LISTA ORIGINAL
 
-listaPeliculas.sort((a, b) => a.anyo - b.anyo)
+const edad = "edad"
+console.log(datosPersonales[edad])
 
-console.log(listaPeliculas)
+const datos1 = [{...datosPersonales}, ...datosAmigos]
+console.log(datos1)
+
+datos1.sort((a, b) => b.edad - a.edad)
+console.log(datos1)
+
+
