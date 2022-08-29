@@ -12,3 +12,4 @@ function* idsPares() {
         yield id += 2
     }
 }
+ 
