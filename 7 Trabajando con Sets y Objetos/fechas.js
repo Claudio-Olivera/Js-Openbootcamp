@@ -37,4 +37,4 @@ console.log(fecha2)
 
 // .toLocaleDateString
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
-console.log(fecha2.toLocaleDateString("en-US"))
+console.log(fecha2.toLocaleDateString("en-US")) 
