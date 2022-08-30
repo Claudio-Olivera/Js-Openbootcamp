@@ -7,6 +7,5 @@ const objeto = {
 }
 sessionStorage.setItem(JSON.stringify(objeto.nombre),JSON.stringify(objeto))
 localStorage.setItem(JSON.stringify(objeto.nombre),JSON.stringify(objeto))
-
-const fecha = Date()
-document.cookie = "objeto=Objeto; expires=" + fecha
+/*para que expire en 2 minutos la cookie*/
+document.cookie = `datos=${JSON.stringify(objeto)};expires=${new Date(now.getTime() + 2 * 60000)}`
