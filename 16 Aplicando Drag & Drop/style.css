@@ -1,0 +1,32 @@
+.section{
+    background-color: darkslategray;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.paragraph{
+    background-color: white;
+    padding: 1rem;
+}
+
+.paragraph.dragging{
+    opacity: 0.3;
+}
+
+.image-phantom{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    left: -100vw;
+}
+.trash{
+    background-image:url("./trashCan.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 300px;
+    margin:0 auto;
+    background-color: white;
+    height: 300px;
+}
